@@ -1,0 +1,40 @@
+.BoxModel{
+    width:70%;
+    height:500px;
+    border: 1px inset #1C6EA4;
+    margin-left:220px;
+    margin-top : 50px;
+    border-radius:10px
+}
+.shadow-bottom {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.headername{
+    font-size:27px
+}
+.inputStyle{
+    border-color:#000000;;
+}
+.widthAdjust{
+    width:260px;
+}
+.nxt_btn{
+    font-size: x-large;
+    border-radius: 10px;
+    margin-top:10px ;
+    margin-left: 800px;
+}
+.buttonMargin{
+    margin-left:650px;
+    margin-top:20px;
+}
+.dropDown{
+    width:270px;
+    
+}
+.paraStyleleft{
+    margin-left:135px;
+}
+.paraStyleRight{
+    margin-right:205px;
+}

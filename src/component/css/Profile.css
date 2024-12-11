@@ -1,0 +1,7 @@
+.sideBar{
+    height: 100vh;
+    background-color: #AFC9F3;
+    -webkit-box-shadow: 6px 7px 14px -9px rgba(233,67,52,0.38);
+-moz-box-shadow: 6px 7px 14px -9px rgba(233,67,52,0.38);
+box-shadow: 6px 7px 14px -9px rgba(233,67,52,0.38);
+}

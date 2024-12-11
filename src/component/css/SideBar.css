@@ -1,0 +1,86 @@
+.sidebar-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #343a40;
+  color: #fff;
+  height: 106.2vh;
+  overflow: hidden;
+  padding: 16px;
+  transition: width 0.4s ease;
+}
+
+.sidebar__collapse-button {
+  position: absolute;
+  top: 20px; /* Keep the button visible on top of the sidebar */
+  left: -45px; /* Adjust the button position to be outside */
+  background-color: #495057;
+  border: none;
+  border-radius: 50%;
+  width: 40px; /* Larger button size for better visibility */
+  height: 40px; /* Larger button size for better visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10; /* Ensures the button is above other elements */
+}
+
+.sidebar__collapse-button:hover {
+  background-color: #6c757d;
+}
+
+.sidebar-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #adb5bd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+.sidebar-item__active {
+  background-color: #495057;
+  color: #fff;
+}
+
+.sidebar-item__active-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #6c757d;
+  border-radius: 8px;
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item__icon {
+  margin-right: 12px;
+  font-size: 1.5rem;
+}
+
+.sidebar-item__title {
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease, clip-path 0.3s ease;
+}
+
+.sidebar-item__collapsed .sidebar-item__title {
+  display: none;
+}

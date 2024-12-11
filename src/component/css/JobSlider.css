@@ -1,0 +1,85 @@
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: white;
+  background-color: gray; /* Visible background for better contrast */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Ensure arrows are above content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: lightgray; /* Lighter color on hover */
+  transform: translateY(-50%) scale(1.1); /* Slight zoom effect */
+}
+
+/* Position arrows */
+.slick-prev {
+  left: -60px;
+}
+
+.slick-next {
+  right: -60px;
+}
+
+/* Customize the slick dots */
+.slick-dots {
+  position: absolute;
+  bottom: -50px; /* Move dots below the slider */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: gray; /* Default dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: black; /* Active dot color */
+}
+
+/* Card styling */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px; /* Add more padding inside the card */
+  background-color: whitesmoke;
+  border-radius: 8px; /* Rounded corners for better aesthetics */
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 8px; /* Space below each text line */
+}
+
+/* Responsive arrows for mobile */
+@media (max-width: 768px) {
+  /* Hide default Slick arrows on mobile */
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}

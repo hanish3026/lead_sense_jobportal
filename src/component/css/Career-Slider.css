@@ -1,0 +1,142 @@
+/* Slider container */
+.career-slider-container {
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f8f9fa;
+  
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: visible; /* Ensure arrows are visible */
+  margin-left: 200px; /* Move slider section to the right (only for larger screens) */
+}
+
+/* Custom previous and next buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button {
+  left: -60px;
+}
+
+.next-button {
+  right: -60px;
+}
+
+/* Career buttons */
+.career-button {
+  padding: 20px 30px;
+  background-color: #cddef8;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 15px 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.car-img {
+  display: flex;
+  overflow: hidden;
+  background-color: #cddef8; 
+}
+
+.career-button:hover {
+  background-color: #023e8a;
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 768px) {
+  .career-button {
+    font-size: 16px;
+  }
+
+  .car-img {
+    display: block;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 20px;
+    padding: 10px 18px;
+  }
+
+  /* Adjust container padding */
+  .career-slider-container {
+    padding: 50px 0;
+    margin-left: 0; /* Remove the margin-left on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .career-button {
+    font-size: 14px;
+  }
+
+  .car-img {
+    display: block;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  /* Adjust container padding further */
+  .career-slider-container {
+    padding: 15px 0;
+    margin-left: 0; /* Remove the margin-left on small screens */
+  }
+}
+
+/* Custom previous and next buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 0, 0, 0.8); /* Red color for custom arrows */
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(255, 0, 0, 1); /* Darker red on hover */
+}
+
+.prev-button {
+  left: -60px;
+}
+
+.next-button {
+  right: -60px;
+}
+
+/* Hide default slick arrows */
+.slick-prev, .slick-next {
+  display: none !important;
+}

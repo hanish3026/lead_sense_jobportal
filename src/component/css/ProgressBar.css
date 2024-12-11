@@ -1,0 +1,43 @@
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.progress-line {
+    flex: 1;
+    height: 4px;
+    background-color: #d3d3d3;
+    transition: background-color 0.3s ease;
+}
+
+.progress-line.active {
+    background-color: red; 
+}
+
+.progress-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d3d3d3; 
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.progress-circle.active {
+    background-color: red;
+}
+
+@media (max-width: 576px) {
+    .progress-circle {
+        width: 15px;
+        height: 15px;
+    }
+    .progress-line {
+        height: 3px;
+    }
+}

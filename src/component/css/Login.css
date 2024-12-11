@@ -1,0 +1,65 @@
+.button-container {
+  display: flex;
+}
+
+.merged-button-left,
+.merged-button-right {
+  border: none;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.merged-button-left {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  width: 50%;
+}
+
+.merged-button-left-active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.merged-button-right {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  width: 50%;
+}
+
+.merged-button-right-active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.row {
+  width: 100%;
+}
+
+.form-inactive {
+  box-shadow: none;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.form-active {
+  box-shadow: 0px 10px 30px rgba(173, 216, 230, 0.8);
+  width: 90%;
+  height: auto;
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 784px) {
+  .images {
+    display: none;
+  }
+}

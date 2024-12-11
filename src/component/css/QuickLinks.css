@@ -1,0 +1,39 @@
+.quick-link-container {
+    /* padding: 20px; */
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+  }
+  
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .link {
+    padding: 10px 15px;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link.active {
+    background-color:#E94334;
+    ;
+    color: white;
+  }
+  
+  .label {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none; /* Removes underline */
+    color: inherit;        /* Inherits the color from the parent element */
+  }
+  

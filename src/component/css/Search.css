@@ -1,0 +1,229 @@
+/* General Styles */
+.search-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+  }
+  
+  /* Filter Section */
+  .filter-container {
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+  
+  .filter-item {
+    margin-bottom: 10px;
+    min-width: 180px;
+    flex: 1 1 22%;
+  }
+  
+  .filter-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-input:focus {
+    border-color: #764ba2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.5);
+  }
+  
+  /* Filter Button */
+  .filter-btn {
+    background-color: #dc3545;
+    color: white;
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Header Styles */
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .header h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+  }
+  
+  .header .subtitle {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 5px;
+  }
+  
+  /* Icon Style */
+  .header i {
+    margin-right: 10px;
+    font-size: 1.75rem;
+    color: #ec0d23;
+  }
+  
+  /* User Cards Section */
+  .user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* Increased gap between cards */
+    padding: 20px; /* Added padding around the cards */
+    justify-content: space-around; /* Adds spacing around the cards */
+  }
+  
+  .cards {
+    width: 100%;
+    max-width: 280px;  
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px;  
+    height: auto;
+  }
+  
+  .cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-profile-pic {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .user-info {
+    font-size: 0.875rem;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .view-btn {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .view-btn:hover {
+    background-color: #c82333;
+  }
+
+  .emptyprofile {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .emptyprofile:hover {
+    cursor: pointer;
+    background-color: #f0f0f0; /* Light background color on hover */
+    transform: scale(1.05); /* Slightly scale up the element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }
+
+ 
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .filter-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filter-item {
+      flex: 1 1 100%;
+      margin-bottom: 15px;
+    }
+  
+    .filter-btn {
+      width: 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .content-container {
+      padding: 10px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .filter-input {
+      font-size: 0.875rem;
+      padding: 6px;
+    }
+  
+    .view-btn {
+      font-size: 0.875rem;
+    }
+  }
+  

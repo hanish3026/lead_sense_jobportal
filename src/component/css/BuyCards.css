@@ -1,0 +1,140 @@
+/* General Styles for Buy Cards */
+.buy_card {
+  background-color: whitesmoke; 
+  border: 1px solid #ddd;
+   
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.buy_card:hover {
+  transform: translateY(-5px);
+}
+
+.buy_card h3 {
+  font-size: 1.5rem;
+  color: #333;  
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+.card_description {
+  font-size: 1rem;
+  color: #666; /* Default color */
+  margin-bottom: 15px;
+}
+
+.card_price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Default color */
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: #007bff; /* Price color */
+}
+.gold_price{
+  color: black;
+}
+
+.span_text{
+  color:black;
+}
+.card_benefits {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.card_benefits li {
+  font-size: 1rem;
+  color: #555; /* Default color */
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.card_benefits li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+}
+
+.buy_button {
+  padding: 10px 20px;
+  background-color: #007bff;  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy_button:hover {
+  background-color: #0056b3; 
+}
+
+.cta_description {
+  font-size: 1rem;
+  color: #333;  
+  margin-top: 15px;
+}
+
+.rating {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #ffd700;  
+}
+
+.offer_banner {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+ 
+
+ 
+
+/* Gold Card Styling */
+.buy_card_gold {
+  background-color: #0D6EFD;  
+     
+}
+
+/* New button color for Gold card */
+.buy_card_gold .buy_button {
+  background-color:#22177A;
+  color: whitesmoke;
+  border: 2px solid #0D6EFD;
+  font-weight: bolder;
+}
+
+ 
+
+/* Text color change for Gold Card */
+.buy_card_gold h3,
+.buy_card_gold .card_description,
+.buy_card_gold .card_price,
+.buy_card_gold .card_benefits li,
+.buy_card_gold .cta_description {
+  color: white; /* White text for all text elements in the Gold Card */
+}
+ 
